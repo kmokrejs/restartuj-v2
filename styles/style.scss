@@ -189,10 +189,11 @@ header{
 }
 
 .wrap-boxes{
-    height: 380px;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box{
@@ -530,7 +531,7 @@ header{
 
 //mobile to 600px
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 1025px)
 {
     .logo-div{
         display: flex;
@@ -596,8 +597,7 @@ header{
         background-size: cover;
         .wrap-hero{
             display: flex;
-            width: 80%;
-            margin: auto;
+            margin: 0 80px;
             .text-container{
                 display: flex;
                 flex-direction: column;
@@ -664,7 +664,7 @@ header{
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         padding: 0 40px;
         .about-box{
             display: flex;
@@ -674,28 +674,25 @@ header{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 300px;
-                width: 500px;
                 margin-left: 50px;
                 img{
-                    height: 250px;
+                    height: 220px;
                 }
                 .img-flip{
-                    height: 250px;
+                    height: 220px;
                     transform: scaleX(-1);
                     
                 }
             }
             .about-text{
-                height: 300px;
-                width: 500px;
-                margin-right: 50px;
+                margin-right: 0px;
                 h1{
                     font-size: 34px;
                     margin: 0;
                 }
                 h2{
                     font-size: 20px;
+                    text-align: justify;
                 }
                 button{
                     background:  rgba(0, 0, 0, 0);
@@ -776,12 +773,12 @@ header{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 0 40px;
+            padding: 0 80px;
             .contact-info{
                 display: flex;
                 flex-direction: column;
                 align-self: center;
-                margin-right: 80px;
+                margin-right: 0px;
 
                 h2{
                     font-size: 28px;
@@ -812,9 +809,9 @@ header{
             .map{
                 display: flex;
                 margin-left: 100px;
-                width: 450px;
+                align-items:center ;
                 iframe{
-                    width: 450px;
+                    width: 420px;
                     height: 300px;
                 }
             }
@@ -822,10 +819,11 @@ header{
     }
 }
 
-@media only screen and (max-width: 890px)
+@media only screen and (max-width: 915px)
 {
     .toggle-but{
         display: flex;
+        
     }
     .menu{
         display: none;
@@ -834,8 +832,6 @@ header{
         .menu-items{
             display: flex;
             flex-direction: column;
-            
-            
             width: 100%;
             .item{
                 width: 100%;
@@ -858,17 +854,189 @@ header{
     }
     .menu.active{
         display: flex;
-        //background-color: #ebebeb;
     }
     header{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+        padding-left: 50px;
         .logo-div{
             display: flex;
             align-self: flex-start;
         }
     }
+    .hero{
+        .wrap-hero{
+            margin: 0 50px;
+            .text-container{
+                .hero-text{
+                    font-size: 60px;
+                }
+                .button-wrap{
+                    display: flex;
+                    .button-1{
+                        margin-right: 40px;
+                        button{
+                            font-size: 16px;
+                            width: 170px;
+                            height: 50px;
+                        }
+                    }
+                    .button-2{
+                        
+                        button{
+                            font-size: 16px;
+                            width: 170px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about-wrap{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 0 50px;
+        .about-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 30px;
+            .about-foto{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30px;
+                img{
+                    height: 200px;
+                }
+                .img-flip{
+                    height: 200px;
+                    transform: scaleX(-1);
+                    z-index: -1;
+                }
+            }
+            .about-text{
+                margin-right: 10px;
+                margin-left: 30px;
+                
+                h1{
+                    font-size: 34px;
+                    margin: 0;
+                }
+                h2{
+                    font-size: 20px;
+                }
+                button{
+                    background:  rgba(0, 0, 0, 0);
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    height: 40px;
+                    width: 300px;
+                    border: 1px solid black;
+                    
+                }
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 0;
+        .contact-wrap{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0 50px;
+            .contact-info{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                margin-left: 0;
+                margin-right: 0;
+                h2{
+                    font-size: 26px;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 16px;
+                    b{
+                        font-size: 20px;
+                    }
+                }
+                form{
+                    
+                    input{
+                    background:  rgba(0, 0, 0, 0);
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                    height: 40px;
+                    width: 170px;
+                    border: 1px solid black;
+                    margin-left: 4px;
+                    }
+                }
+            }
+            .map{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-left: 0px;
+                iframe{
+                    width: 350px;
+                }
+            }
+        }
+    }
 
+}
+
+@media only screen and (max-width: 770px)
+{
+    header{
+        padding-left: 40px;
+    }
+
+    .hero{
+        display: flex;
+        .wrap-hero{
+            margin: 0 40px;
+            .text-container{
+                display: flex;
+                .hero-text{
+                    font-size: 58px;
+                }
+                .button-wrap{
+                    display: flex;
+                    .button-1{
+                        margin-right: 30px;
+                        button{
+                            font-size: 15px;
+                            width: 160px;
+                            height: 50px;
+                        }
+                    }
+                    .button-2{
+                        
+                        button{
+                            font-size: 15px;
+                            width: 160px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
