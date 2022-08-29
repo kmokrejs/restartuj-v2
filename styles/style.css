@@ -494,6 +494,7 @@ header {
   height: 40px;
   width: 300px;
   border: 1px solid black;
+  color: #000000;
 }
 
 .obj-wrap {
@@ -652,6 +653,7 @@ header {
   width: 200px;
   border: 1px solid black;
   margin-left: 4px;
+  color: #000000;
 }
 
 .contact .contact-wrap .map {
