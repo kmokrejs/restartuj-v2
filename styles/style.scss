@@ -483,22 +483,28 @@ header{
         justify-content: center;
         font-family: 'Poppins', sans-serif;
         margin: 0px 0 10px 0;
-        .item-footer{
+        ul{
             display: flex;
-            margin-right: 30px;
-            a{
-                text-decoration: none;
-                color: rgb(255, 255, 255);
-                font-size: 20px;       
-                font-weight: 700;
-                text-transform: lowercase;
+            flex-direction: row;
+            padding: 0;
+            .item-footer{
+                display: flex;
+                margin-right: 30px;
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 20px;       
+                    font-weight: 700;
+                    text-transform: lowercase;
+                    
+                }
                 
             }
+            .item-footer:last-child{
+                margin-right: 0;
+            }
+        }
             
-        }
-        .item-footer:last-child{
-            margin-right: 0;
-        }
         
         
     }
@@ -1771,20 +1777,24 @@ header{
             flex-direction: column;
             justify-content: center;
             font-family: 'Poppins', sans-serif;
-            
-            .item-footer{
+            ul{
                 display: flex;
-                justify-content: center;
-                margin: 0;
-                a{
-                    text-decoration: none;
-                    color: rgb(255, 255, 255);
-                    font-size: 16px;       
-                    font-weight: 700;
-                    text-transform: lowercase;
+                flex-direction: column;
+                .item-footer{
+                    display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    a{
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        font-size: 16px;       
+                        font-weight: 700;
+                        text-transform: lowercase;
+                    }
+                    
                 }
-                
             }
+            
         
             
             
