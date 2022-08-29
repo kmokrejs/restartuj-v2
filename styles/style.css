@@ -237,6 +237,7 @@ header {
   color: black;
   height: 55px;
   width: 180px;
+  border: 2px solid black;
 }
 
 .hero .wrap-hero .text-container .button-wrap .button-2 button:hover {
