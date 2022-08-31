@@ -27,11 +27,12 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 2em;
-  padding: 0 80px;
+  padding: 0 150px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   background-color: white;
+  z-index: 99;
 }
 
 .logo-div {
@@ -216,7 +217,7 @@ header {
 
 .hero .wrap-hero .text-container .button-wrap .button-1 button:hover {
   color: #af9e3e;
-  border: 2px solid #af9e3e;
+  font-size: 18px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
@@ -244,7 +245,7 @@ header {
   color: #af9e3e;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  border: 4px solid black;
+  font-size: 18px;
 }
 
 .boxes {
@@ -269,7 +270,8 @@ header {
 }
 
 .section-heading h1 {
-  font-size: 34px;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 .wrap-boxes {
@@ -292,7 +294,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   height: 350px;
-  width: 350px;
+  width: 380px;
   -ms-flex-item-align: center;
       align-self: center;
   border-radius: 30px;
@@ -338,9 +340,84 @@ header {
   position: absolute;
   margin: 80px 0px 0px -40px;
   height: 50px;
-  opacity: 1;
+  -webkit-animation: bounce 4s infinite;
+          animation: bounce 4s infinite;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 
 .box-label p {
@@ -384,7 +461,7 @@ header {
 }
 
 .box-label:hover a img {
-  opacity: 0;
+  display: none;
 }
 
 .box:hover p {
@@ -404,16 +481,22 @@ header {
 .box:first-of-type {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.396)), to(rgba(255, 255, 255, 0.368))), url("../img/massage.png");
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.396), rgba(255, 255, 255, 0.368)), url("../img/massage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box:nth-of-type(2n) {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.396)), to(rgba(255, 255, 255, 0.368))), url("../img/tejping.jpg");
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.396), rgba(255, 255, 255, 0.368)), url("../img/tejping.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box:last-of-type {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.396)), to(rgba(255, 255, 255, 0.368))), url("../img/mental-coaching.jpeg");
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.396), rgba(255, 255, 255, 0.368)), url("../img/mental-coaching.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-wrap {
@@ -453,7 +536,7 @@ header {
           align-items: center;
   height: 300px;
   width: 500px;
-  margin-left: 50px;
+  margin-left: 105px;
 }
 
 .about-wrap .about-box .about-foto img {
@@ -470,18 +553,19 @@ header {
 .about-wrap .about-box .about-text {
   height: 300px;
   width: 500px;
-  margin-right: 50px;
-  margin-left: 30px;
+  margin-right: 105px;
+  margin-left: 0px;
   margin-bottom: 20px;
 }
 
 .about-wrap .about-box .about-text h1 {
-  font-size: 34px;
+  font-size: 48px;
   margin: 0;
 }
 
 .about-wrap .about-box .about-text h2 {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .about-wrap .about-box .about-text button {
@@ -533,7 +617,7 @@ header {
 
 .obj-wrap .obj-heading .heading h1 {
   margin: 0;
-  font-size: 34px;
+  font-size: 48px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -575,17 +659,33 @@ header {
   margin-right: 0;
 }
 
-.obj-wrap .wrap-socials .text-soc {
+.obj-wrap .wrap-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.obj-wrap .wrap-text .text-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 80px;
   width: 120px;
   text-align: center;
   padding-bottom: 10px;
 }
 
-.obj-wrap .wrap-socials .text-soc:last-child {
+.obj-wrap .wrap-text .text-soc:last-child {
   margin-right: 0;
 }
 
@@ -626,41 +726,21 @@ header {
           flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-right: 80px;
+  margin: 0;
 }
 
 .contact .contact-wrap .contact-info h2 {
-  font-size: 34px;
-  margin-bottom: 0;
+  font-size: 48px;
+  margin: 0 0;
 }
 
 .contact .contact-wrap .contact-info p {
   font-size: 16px;
+  text-align: center;
 }
 
 .contact .contact-wrap .contact-info p b {
   font-size: 20px;
-}
-
-.contact .contact-wrap .contact-info form input {
-  background: rgba(0, 0, 0, 0);
-  border-radius: 20px;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  height: 40px;
-  width: 200px;
-  border: 1px solid black;
-  margin-left: 4px;
-  color: #000000;
-}
-
-.contact .contact-wrap .map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 80px;
 }
 
 .footer {
