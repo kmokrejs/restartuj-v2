@@ -25,6 +25,9 @@ body {
           flex-direction: column;
   background-color: white;
   z-index: 99;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .head {
@@ -3006,6 +3009,152 @@ header {
     width: 250px;
     height: 250px;
   }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: black;
+  }
+  .footer .logo-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 50px 0 5px 0;
+  }
+  .footer .logo-footer p {
+    margin: 0;
+  }
+  .footer .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .footer .center .menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0 10px 20px;
+  }
+  .footer .center .menu-footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+  }
+  .footer .center .menu-footer ul .item-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 20px;
+  }
+  .footer .center .menu-footer ul .item-footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+  .footer .center .menu-footer ul .item-footer a:hover {
+    color: #af9e3e;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+  .footer .center .menu-footer ul .item-footer:last-child {
+    margin-right: 0;
+  }
+  .footer .footer-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer-socials .soc-ft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .footer .footer-socials .soc-ft img {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
+  }
+  .footer .footer-socials .soc-ft:last-child {
+    margin-left: 15px;
+  }
+  .footer .claim-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+  .footer .claim-footer p {
+    color: white;
+  }
+  .footer .add-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 10px 0;
+  }
+  .footer .add-footer p {
+    color: white;
+    margin-right: 20px;
+  }
+  .footer .add-footer p:last-of-type {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -3143,14 +3292,14 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-right: 25px;
     margin-left: 5px;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 button {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 button {
     background: black;
     border-radius: 20px;
     cursor: pointer;
@@ -3161,18 +3310,18 @@ header {
     height: 45px;
     width: 150px;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 button:hover {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 button:hover {
     color: #af9e3e;
     font-size: 18px;
     -webkit-transition: 0.7s;
     transition: 0.7s;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 button {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 button {
     background: white;
     border-radius: 20px;
     cursor: pointer;
@@ -3184,7 +3333,7 @@ header {
     width: 150px;
     border: 2px solid black;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 button:hover {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 button:hover {
     color: #af9e3e;
     -webkit-transition: 0.7s;
     transition: 0.7s;
@@ -3540,10 +3689,13 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 15px;
   }
   .obj-wrap .obj-heading .sub-head p {
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    width: 90%;
+    margin: 0 20px;
   }
   .obj-wrap .wrap-socials {
     display: -webkit-box;
@@ -3712,7 +3864,7 @@ header {
   .footer .logo-footer p {
     margin: 0;
   }
-  .footer .menu-footer {
+  .footer .center .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3725,7 +3877,7 @@ header {
             justify-content: center;
     font-family: 'Poppins', sans-serif;
   }
-  .footer .menu-footer ul {
+  .footer .center .menu-footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3734,7 +3886,7 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer .menu-footer ul .item-footer {
+  .footer .center .menu-footer ul .item-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3743,7 +3895,7 @@ header {
             justify-content: center;
     margin: 0;
   }
-  .footer .menu-footer ul .item-footer a {
+  .footer .center .menu-footer ul .item-footer a {
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -3932,36 +4084,36 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-right: 25px;
-    margin-left: 0px;
+    margin-left: 5px;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 button {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 button {
     background: black;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
-    height: 40px;
-    width: 120px;
+    height: 45px;
+    width: 130px;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 button:hover {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 button:hover {
     color: #af9e3e;
     font-size: 18px;
     -webkit-transition: 0.7s;
     transition: 0.7s;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 button {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 button {
     background: white;
     border-radius: 20px;
     cursor: pointer;
@@ -3969,11 +4121,11 @@ header {
     font-weight: 700;
     font-size: 16px;
     color: black;
-    height: 40px;
-    width: 120px;
+    height: 45px;
+    width: 130px;
     border: 2px solid black;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 button:hover {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 button:hover {
     color: #af9e3e;
     -webkit-transition: 0.7s;
     transition: 0.7s;
@@ -4725,36 +4877,36 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 10px;
-    margin-left: 0px;
+    margin-right: 25px;
+    margin-left: 5px;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 button {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 button {
     background: black;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     height: 40px;
-    width: 120px;
+    width: 110px;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-1 button:hover {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-1 button:hover {
     color: #af9e3e;
     font-size: 18px;
     -webkit-transition: 0.7s;
     transition: 0.7s;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 button {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 button {
     background: white;
     border-radius: 20px;
     cursor: pointer;
@@ -4763,10 +4915,10 @@ header {
     font-size: 16px;
     color: black;
     height: 40px;
-    width: 120px;
+    width: 110px;
     border: 2px solid black;
   }
-  .hero .center .wrap-hero .text-container .button-wrap .button-2 button:hover {
+  .hero .center .wrap-hero .text-container .button-wrap a .button-2 button:hover {
     color: #af9e3e;
     -webkit-transition: 0.7s;
     transition: 0.7s;
@@ -5067,7 +5219,7 @@ header {
     font-weight: 500;
     text-align: justify;
   }
-  .about-wrap .about-box .center .about-text button {
+  .about-wrap .about-box .center .about-text a button {
     background: rgba(0, 0, 0, 0);
     border-radius: 20px;
     cursor: pointer;
@@ -5075,7 +5227,7 @@ header {
     font-weight: 700;
     font-size: 16px;
     height: 50px;
-    width: 100%;
+    width: 90%;
     border: 1px solid black;
     color: #000000;
   }
