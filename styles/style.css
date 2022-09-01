@@ -3237,7 +3237,7 @@ header {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%;
+    width: 99%;
   }
   .boxes .center .wrap-boxes .box {
     display: -webkit-box;
@@ -3246,7 +3246,7 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 48%;
+    width: 60%;
     height: 250px;
     margin: 5px;
     -webkit-box-align: center;
@@ -3543,6 +3543,7 @@ header {
   }
   .obj-wrap .obj-heading .sub-head p {
     font-family: 'Poppins', sans-serif;
+    text-align: center;
   }
   .obj-wrap .wrap-socials {
     display: -webkit-box;

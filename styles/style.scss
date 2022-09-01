@@ -2219,11 +2219,11 @@ header{
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: wrap;
-                width: 90%;
+                width: 99%;
                 .box{
                     display: flex;
                     justify-content: center;
-                    width: 48%;
+                    width: 60%;
                     height: 250px;
                     margin: 5px;
                     align-items: center;
@@ -2445,6 +2445,7 @@ header{
                 justify-content: center;
                 p{
                     font-family: 'Poppins', sans-serif;
+                    text-align: center;
                 }
             }
         }
