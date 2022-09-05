@@ -5615,6 +5615,7 @@ header {
           justify-content: center;
   border-radius: 20px;
   width: 90%;
+  overflow-x: auto;
 }
 
 .price-table .center .table-center .table .tg {
