@@ -42,15 +42,25 @@ header{
 .logo-div{
     display: flex;
     align-self: center;
-    p{
+    a{
+        text-decoration: none;
         font-family: 'Poppins', sans-serif;
         font-size: 40px;
         color: rgb(0, 0, 0);
         font-weight: 700;
         text-transform: uppercase;
         margin: 0;
-        
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            
+        }
     }
+    
     
 }
 
@@ -1001,15 +1011,19 @@ header{
     .logo-div{
         display: flex;
         align-self: center;
-        p{
-            font-family: 'Poppins', sans-serif;
-            font-size: 36px;
-            color: rgb(0, 0, 0);
-            font-weight: 700;
-            text-transform: uppercase;
-            margin: 0;
-            
+        a{
+            text-decoration: none;
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 36px;
+                color: rgb(0, 0, 0);
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 0;
+                
+            }
         }
+       
         
     } 
 
@@ -1324,10 +1338,14 @@ header{
         .logo-div{
             display: flex;
             align-self: flex-start;
-            p{
-                font-size: 34px;
-                padding-top: 5px;
+            a{
+                text-decoration: none;
+                p{
+                    font-size: 34px;
+                    padding-top: 5px;
+                }
             }
+            
         }
     }
     .toggle-but{
@@ -1636,10 +1654,14 @@ header{
         .logo-div{
             display: flex;
             align-self: flex-start;
-            p{
-                font-size: 34px;
-                padding-top: 5px;
+            a{
+                text-decoration: none;
+                p{
+                    font-size: 34px;
+                    padding-top: 5px;
+                }
             }
+            
         }
     }
 
@@ -2176,10 +2198,14 @@ header{
         .logo-div{
             display: flex;
             align-self: flex-start;
-            p{
-                font-size: 34px;
-                padding-top: 5px;
+            a{
+                text-decoration: none;
+                p{
+                    font-size: 34px;
+                    padding-top: 5px;
+                }
             }
+            
         }
     }
 
@@ -2738,10 +2764,14 @@ header{
         .logo-div{
             display: flex;
             align-self: flex-start;
-            p{
-                font-size: 34px;
-                padding-top: 5px;
+            a{
+                text-decoration: none;
+                p{
+                    font-size: 34px;
+                    padding-top: 5px;
+                }
             }
+            
         }
     }
 
@@ -3851,6 +3881,106 @@ header{
                 padding: 0 10px;
     
             }
+        }
+        
+    }
+}
+
+
+
+
+////////////CENIK///////////////////
+
+.price-table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .center{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        flex-direction: column;
+        .section-heading{
+            display: flex;
+            justify-content: center;
+            h1{
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+        }
+        .table-center{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .table{
+                display: flex;
+                justify-content: center;
+                border-radius: 20px;
+                width: 90%;
+                .tg {
+                    border-spacing:0;
+                    thead{
+                        tr{
+                            th{
+                                border:1px solid black;
+                                background-color: black;
+                                font-size:28px;
+                                font-weight:700;
+                                color: white;
+                                overflow:hidden;
+                                padding:20px 40px;
+                                word-break:normal;
+                                
+                                .tg-baqh{
+                                    text-align:center;
+                                    vertical-align:top
+                                }
+                            }
+                            th:nth-child(1){
+                                border-top-left-radius: 10px;
+                                padding-left: 103px;
+                                padding-right: 103px;
+                            }
+                            th:last-child{
+                                border-top-right-radius: 10px;
+                                padding-left: 103px;
+                                padding-right: 103px;
+                            }
+                        }  
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                border:none;
+                                font-size:16px;
+                                background-color: white;
+                                color: black;
+                                overflow:hidden;
+                                padding:15px 24px;
+                                word-break:normal;
+                                border-bottom: 1px solid black;
+                            }
+                            .tg-baqh{
+                                text-align:center;
+                                vertical-align:top
+                            }
+                            td:nth-child(1){
+                                border-left: 1px solid black;
+                                border-bottom-left-radius: 10px;
+
+                                
+                            }
+                            td:last-child{
+                                border-right: 1px solid black;
+                                border-bottom-right-radius: 10px;
+                                
+                            }
+                            
+                        }
+                    }
+                }
+        }
+
         }
         
     }
