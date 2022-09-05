@@ -3400,6 +3400,84 @@ header{
         }
         
     }
+
+    ///////Ceník/////
+    html.cenik{
+        .price-table{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .center{
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                flex-direction: column;
+                .section-heading{
+                    display: flex;
+                    justify-content: flex-start;
+                    h1{
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .table-center{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    .table{
+                        width: 100%;
+                        overflow-x:auto;
+                        .tg {
+                            thead{
+                                tr{
+                                    width: 100%;
+                                    .tg-baqh{
+                                        border:1px solid black;
+                                        background-color: black;
+                                        border-top-left-radius: 10px;
+                                        border-top-right-radius: 10px;
+                                        font-size:20px;
+                                        padding:10px 0px;
+                                        word-break:normal;
+                                        vertical-align:middle;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    width: 100%;
+                                    
+                                    .tg-baqh{
+                                        border-bottom: 1px groove black;
+                                        font-size:16px;
+                                        background-color: rgb(255, 255, 255);
+                                        color: black;
+                                        overflow:hidden;
+                                        padding:15px 25px;
+                                        word-break:normal;
+                                        text-align:center;
+                                        vertical-align:middle;
+                                        
+                                    }
+                                }
+                                tr:last-child{
+                                    .tg-baqh:nth-child(1){
+                                        border-bottom-left-radius: 10px;
+                                    }
+                                    .tg-baqh:last-child{
+                                        border-bottom-right-radius: 10px;
+                                    }
+                                }
+                                
+                            } 
+                        }
+                            
+                    }
+                }
+            }
+                
+        }
+    }
 }
 
 @media only screen and (max-width: 360px)
