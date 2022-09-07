@@ -1034,7 +1034,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 100%;
   overflow-x: auto;
   margin-bottom: 50px;
 }
@@ -1623,6 +1623,104 @@ header {
   }
   .obj-wrap .wrap-text .text-soc:last-child {
     margin-right: 0;
+  }
+  .price-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .price-table .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-table .center .section-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-table .center .section-heading h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .price-table .center .table-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .price-table .center .table-center .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 50px;
+  }
+  .price-table .center .table-center .table .tg {
+    border-spacing: 0;
+    width: 100%;
+  }
+  .price-table .center .table-center .table .tg thead tr {
+    width: 100%;
+  }
+  .price-table .center .table-center .table .tg thead tr .tg-baqh {
+    border: 1px solid black;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    width: 100% !important;
+    padding: 20px 0px;
+    word-break: normal;
+    vertical-align: middle;
+  }
+  .price-table .center .table-center .table .tg tbody tr {
+    width: 100%;
+  }
+  .price-table .center .table-center .table .tg tbody tr .tg-baqh {
+    border-bottom: 1px groove black;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    padding: 15px 25px;
+    word-break: normal;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .price-table .center .table-center .table .tg tbody tr:last-child .tg-baqh:nth-child(1) {
+    border-bottom-left-radius: 10px;
+  }
+  .price-table .center .table-center .table .tg tbody tr:last-child .tg-baqh:last-child {
+    border-bottom-right-radius: 10px;
   }
 }
 
