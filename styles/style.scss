@@ -708,6 +708,82 @@ header{
     }
 }
 
+#cookiePopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    position: sticky;
+    font-size: 14px;
+    width: 30%;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 1em 0em;
+    border-radius: 6px;
+    left: 70%;
+    transition: all 0.5s ease-in;
+  }
+
+  .btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+        background-color: #000000;
+        border: none;
+        color: #ffffff;
+        font-size: 1em;
+        padding: 0.7em 1em;
+        margin-right: 20px;
+        border-radius: 15px;
+      }
+    .second{
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        color: #000000;
+        font-size: 1em;
+        padding: 0.7em 1em;
+        margin-right: 20px;
+        border-radius: 15px;
+    }
+
+  }
+  
+  #cookiePopup p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0.5em 0.4em;
+  }
+ 
+  #cookiePopup a {
+    color: #000000;
+  }
+  .hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+  }
+  .show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+  }
+  @media only screen and (max-width: 37.5em) {
+    #cookiePopup {
+      width: 100%;
+    }
+    .hide {
+      bottom: 2em;
+      right: 0;
+    }
+    .show {
+      right: 0;
+      bottom: 0;
+    }
+  }
 
 
 
@@ -1808,6 +1884,9 @@ header{
                 }
             }
         }
+    }
+    #cookiePopup {
+        width: 50%;
     }
 
     }
@@ -2920,6 +2999,10 @@ header{
         }
         
     }
+    #cookiePopup {
+        width: 100%;
+    }
+
 ///////Ceník/////
     html.cenik{
         .price-table{
