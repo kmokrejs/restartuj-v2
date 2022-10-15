@@ -1086,29 +1086,18 @@ header {
   border-bottom-right-radius: 10px;
 }
 
-#cookiePopup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.cookies {
   background-color: #ffffff;
   position: -webkit-sticky;
   position: sticky;
   font-size: 14px;
-  width: 30%;
+  width: 40%;
   -webkit-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
           box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
-  text-align: justify;
+  text-align: right;
   line-height: 1.8em;
-  padding: 1em 0em;
+  padding: 2em 1.4em;
   border-radius: 6px;
-  left: 70%;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
@@ -1146,18 +1135,20 @@ header {
   border-radius: 15px;
 }
 
+.btns .secondd {
+  background-color: #ffffff;
+  border: none;
+  text-decoration: underline;
+  color: #000000;
+  font-size: 1em;
+  padding: 0.7em 1em;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
 #cookiePopup p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   text-align: center;
+  font-weight: bold;
   margin: 0.5em 0.4em;
 }
 
@@ -1168,27 +1159,13 @@ header {
 .hide {
   visibility: hidden;
   bottom: 0;
-  right: 2em;
+  right: 0em;
 }
 
 .show {
   visibility: visible;
-  bottom: 2em;
-  right: 2em;
-}
-
-@media only screen and (max-width: 37.5em) {
-  #cookiePopup {
-    width: 100%;
-  }
-  .hide {
-    bottom: 2em;
-    right: 0;
-  }
-  .show {
-    right: 0;
-    bottom: 0;
-  }
+  bottom: 0.5em;
+  left: 0.5em;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -2718,8 +2695,20 @@ header {
   .contact .contact-wrap .map iframe {
     width: 350px;
   }
-  #cookiePopup {
-    width: 50%;
+  .cookies {
+    background-color: #ffffff;
+    position: -webkit-sticky;
+    position: sticky;
+    font-size: 14px;
+    width: 60%;
+    -webkit-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+            box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    text-align: right;
+    line-height: 1.8em;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
 }
 
@@ -4287,7 +4276,18 @@ header {
     padding: 0 10px;
   }
   #cookiePopup {
+    background-color: #ffffff;
+    font-size: 14px;
     width: 100%;
+    -webkit-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+            box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    line-height: 1.8em;
+    padding: 2em 0em;
+    border-radius: 6px;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
   }
   html.cenik .price-table {
     display: -webkit-box;

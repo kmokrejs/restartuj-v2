@@ -5,6 +5,11 @@ toggleBut.addEventListener("click", () => {
     links.classList.toggle("active")
 })
 
+
+
+
+
+
 let popUp = document.getElementById("cookiePopup");
 //When user clicks the accept button
 document.getElementById("acceptCookie").addEventListener("click", () => {
@@ -44,3 +49,4 @@ window.onload = () => {
     checkCookie();
   }, 2000);
 };
+

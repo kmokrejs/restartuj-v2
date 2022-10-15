@@ -708,20 +708,16 @@ header{
     }
 }
 
-#cookiePopup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.cookies{
     background-color: #ffffff;
     position: sticky;
     font-size: 14px;
-    width: 30%;
+    width:40%;
     box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
-    text-align: justify;
+    text-align: right;
     line-height: 1.8em;
-    padding: 1em 0em;
+    padding: 2em 1.4em;
     border-radius: 6px;
-    left: 70%;
     transition: all 0.5s ease-in;
   }
 
@@ -747,14 +743,22 @@ header{
         margin-right: 20px;
         border-radius: 15px;
     }
+    .secondd{
+        background-color: #ffffff;
+        border: none;
+        text-decoration: underline;
+        color: #000000;
+        font-size: 1em;
+        padding: 0.7em 1em;
+        margin-right: 20px;
+        border-radius: 15px;
+    }
 
   }
   
   #cookiePopup p {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
+    font-weight: bold;
     margin: 0.5em 0.4em;
   }
  
@@ -764,25 +768,12 @@ header{
   .hide {
     visibility: hidden;
     bottom: 0;
-    right: 2em;
+    right: 0em;
   }
   .show {
     visibility: visible;
-    bottom: 2em;
-    right: 2em;
-  }
-  @media only screen and (max-width: 37.5em) {
-    #cookiePopup {
-      width: 100%;
-    }
-    .hide {
-      bottom: 2em;
-      right: 0;
-    }
-    .show {
-      right: 0;
-      bottom: 0;
-    }
+    bottom: 0.5em;
+    left: 0.5em;
   }
 
 
@@ -1885,9 +1876,19 @@ header{
             }
         }
     }
-    #cookiePopup {
-        width: 50%;
-    }
+
+    .cookies{
+        background-color: #ffffff;
+        position: sticky;
+        font-size: 14px;
+        width:60%;
+        box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+        text-align: right;
+        line-height: 1.8em;
+        padding: 2em 1.4em;
+        border-radius: 6px;
+        transition: all 0.5s ease-in;
+      }
 
     }
 
@@ -2999,10 +3000,22 @@ header{
         }
         
     }
+    
+    
     #cookiePopup {
+        background-color: #ffffff;
+        font-size: 14px;
         width: 100%;
+        box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+        font-family: "Poppins", sans-serif;
+        text-align: justify;
+        line-height: 1.8em;
+        padding: 2em 0em;
+        border-radius: 6px;
+        transition: all 0.5s ease-in;
     }
-
+      
+    
 ///////Ceník/////
     html.cenik{
         .price-table{
